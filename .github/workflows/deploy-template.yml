@@ -1,0 +1,17 @@
+name: Deploy Template
+
+on:
+  workflow_call:
+
+jobs:
+
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Deploy application
+        run: |
+          echo "Deploying application..."
+          echo "Deployment finished successfully."
